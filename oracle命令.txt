@@ -1,4 +1,4 @@
-//what do you want?
+//what do you want to do?
 记录操作(录屏命令)步骤:spool d:\操作记录.txt  ;spool off 关闭
 显示当前用户:show user 
 查看当前用户下的表:select * from tab
