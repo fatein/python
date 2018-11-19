@@ -1,0 +1,32 @@
+记录操作(录屏命令)步骤:spool d:\操作记录.txt  ;spool off 关闭
+显示当前用户:show user 
+查看当前用户下的表:select * from tab
+语句注释:--
+查看表结构:desc 表名
+清屏:host cls
+oravle:支持基本的数学运算
+
+查询所有的员工信息:select * from emp;
+格式化信息输出:1.查询现在的行宽:show linesize 2.设置行宽 set linesize 行宽
+	      3.设置列宽: col ename for a8	(for 为 format的缩写;a为字符的代表,8为位数;)
+	      4.设置列宽: col sal for 9		(9 代表一位数字,四位数就是9999)
+	      5./    (/ 代表执行上一个sql语句)
+sql优化原则:1.尽量使用列名,来代替*
+什么是空值:空值是无效的,未指定的,未知的或不可预知的值;空值不是空格或者0
+sql中的null值问题:1.包含null的表达式都为null	2.null永远!=null
+虑空函数:nvl 和nvl2 	
+判断是否是空值用is null;
+nvl(a,b): a的值为空是,返回b,a的值不为空,返回a本身
+oracle别名有三种形式:as"名字"或者"名字"或者名字
+修改上一个命令:ed(完整的英文是edit)
+执行上个命令:/
+去掉重复的命令:distinct 例如:select distinct job from emp;
+distinct 作用于后面的所有列
+连接符|| 与 concat函数功能一致(拼接字符串)
+dual表:伪表
+例如:select 'hello' || 'world'字符串 from dual;(单引号,双引号表示列的别名)
+字符串:字符串可以是select列表中的一个字符,数字,日期;日期和字符只能在单引号中出现;每当返回一行时字符串被输出一次
+
+
+
+看到基本过滤和排序
